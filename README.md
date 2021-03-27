@@ -10,19 +10,30 @@ Use [Crssnt](https://crssnt.com) to convert your Crssnt Jam Sheet into an RSS fe
 
 Crssnt uses a script to build up a native Sheets query function when you add or remove feeds or alter the search terms in your configuration. Once you have it configured how you like, it is refreshed automatically when requested by Crssnt.
 
-## How to use
+## Install
 
 1. [Copy Crssnt Jam](https://docs.google.com/spreadsheets/d/1IHfA5q1DZfq2PZ5vz39eim3VxhiOKbBHNU_Wqz7nJfM/copy) to your own account.
-
 2. Click on `Tools > Script Editor`.
-
 3. Run the script once to set the permissions for the script to access your Sheet on Google Drive. You may see an [unverified app](https://support.google.com/cloud/answer/7454865) warning. Follow the prompts and agree to allow the script to run - you are giving permission to your own Google account to access your own Sheet.
+4. Click `File > Share` to set view permissions for anyone with the link to the Sheet - Crssnt needs view permissions to generate the RSS feed. 
 
-4. Edit the configuration in the `config` sheet. Enter the URL, a pipe separated list of keywords to include, a pipe separated list of keywords to exclude, and TRUE or FALSE depending on if the feed you are subscribing to has an Author column. Until this is automated you will manually need to set the value - after entering the url, check the Raw worksheet to see if the authors name is where the URL should be and set the Has Author value to TRUE, otherwise set it to FALSE.
+## Configure your feeds
 
-5. Click `File > Share` to set view permissions for anyone with the link to the Sheet - Crssnt needs view permissions to generate the RSS feed.
+Select the `config` sheet follow the example provided by the feeds in the sheet.
 
-6. Follow the instructions on [Crssnt](https://crssnt.com) to create your RSS feed url.
+For each feed you want to subscribe to enter the following under the column headings:
+
+- 	**URL** the feed url you are subscribing to
+- 	**Include Keywords** pipe separated keywords to include
+- 	**Exclude Keywords** pipe separated keywords to exclude
+- 	**Has Author** TRUE or FALSE
+
+Until the value for Has Author is automated you will manually need to set the value. After entering the url, check the `Raw` to see if the authors name is where the URL should be and set the Has Author value to TRUE, otherwise set it to FALSE.
+
+## Subscribing to your feed
+
+1. Use the Feed URL on the `config` sheet to subscribe to your new RSS feed.
+2. When subscribed in your Feed Reader update the feed name to something more meaningful.
 
 
 		
