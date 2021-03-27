@@ -24,17 +24,12 @@ Select the `config` sheet follow the example provided by the feeds in the sheet.
 For each feed you want to subscribe to enter the following under the column headings:
 
 - 	**URL** the feed url you are subscribing to
-- 	**Include Keywords** pipe separated keywords to include
-- 	**Exclude Keywords** pipe separated keywords to exclude
+- 	**Include Keywords** pipe delimited lowercase keywords to include e.g. `iphone 12 pro|airtags`
+- 	**Exclude Keywords** pipe delimited lowercase keywords to exclude e.g. `wall st|deals:|opinion:`
 - 	**Has Author** TRUE or FALSE
 
-Until the value for Has Author is automated you will manually need to set the value. After entering the url, check the `Raw` to see if the authors name is where the URL should be and set the Has Author value to TRUE, otherwise set it to FALSE.
+**Note:** until the value for Has Author is automated you will manually need to set the value. After entering the url, check the `Raw` sheet to see if the authors name is where the URL should be and set the Has Author value to TRUE, otherwise set it to FALSE.
 
 ## Subscribing to your feed
 
-1. Use the Feed URL on the `config` sheet to subscribe to your new RSS feed.
-2. When subscribed in your Feed Reader update the feed name to something more meaningful.
-
-
-		
-
+Use the Feed URL on the `config` sheet to subscribe to your new RSS feed. Update the feed name to something more meaningful in your feed reader.
